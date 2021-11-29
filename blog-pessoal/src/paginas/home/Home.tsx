@@ -1,16 +1,32 @@
-import React from "react";
+import React from 'react';
+import { Typography, Box, Grid, Button } from '@material-ui/core';
 import './Home.css';
 
-function Home(){
-    return(
+function Home() {
+    return (
         <>
-            <h1 className='titulo'>Home</h1>
-            <img src="https://camo.githubusercontent.com/f23154b22ee6fd7aa207d3cb7100b3e17cfa75d6a7d2e661d979d37b87e74350/68747470733a2f2f692e7069636173696f6e2e636f6d2f70696339312f38326336336464363539666431336564343637373533633264316631373430332e676966"
-            alt="Git Hub" className='img' />
+            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#3F51B5" }}>
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a)!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                        </Box>
+                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
+                    </Box>
+                </Grid>
+                <Grid item xs={6} >
+                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                </Grid>
+                <Grid xs={12} style={{ backgroundColor: "white" }}>
+                </Grid>
+            </Grid>
         </>
     );
 }
 
 export default Home;
-    
+
 
