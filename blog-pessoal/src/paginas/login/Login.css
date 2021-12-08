@@ -1,5 +1,6 @@
 .textos1{
     font-weight: bold !important;
+    color: #0F1221;
  }
  
  .imagem{
@@ -13,5 +14,19 @@
  
  .text-decorator-none{
      text-decoration: none;
+ }
+
+ .buttom{
+     background-color: #283444 !important;
+     color: white;
+     font-weight: bold !important;
+ }
+
+ .c{
+     color:white;
+ }
+
+ .background{
+     background-color: #D7D8DB;
  }
 
