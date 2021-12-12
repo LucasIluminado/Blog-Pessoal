@@ -5,6 +5,7 @@ import { cadastroUsuario } from '../../services/Service';
 import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
+import { toast } from 'react-toastify';
 
 function CadastroUsuario() {
 
@@ -50,9 +51,27 @@ function CadastroUsuario() {
         e.preventDefault()
         if(confirmarSenha == user.senha){
         cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-        alert('Usuario cadastrado com sucesso')
+        toast.success('Usuário cadastrado com sucesso!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
         }else{
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+                toast.error('Dados inconsistentes. Favor verificar as informações de cadastro.', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
     }
     return (
@@ -69,11 +88,11 @@ function CadastroUsuario() {
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' color='secondary' className='btnCancelar'>
-                                    Cancelar
+                                    <a className='cancel'>Cancelar</a>
                                 </Button>
                             </Link>
-                            <Button type='submit' variant='contained' color='primary'>
-                                    Cadastrar
+                            <Button type='submit' variant='contained' className='buttomC'>
+                                    <a className='c'>Cadastrar</a>
                             </Button>
                         </Box>
                     </form>

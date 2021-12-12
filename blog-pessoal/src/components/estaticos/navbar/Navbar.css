@@ -37,4 +37,74 @@
     margin-right: 15px;
 }
 
+/* CSS Teste do NavBar */
+
+.body{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Montserrat;
+    background-color: #111423 !important;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__item{
+    margin: 0 15px;
+}
+
+.nav__link{
+    display: flex;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.nav__link:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: #00008B;
+    transition: .5s cubic-bezier(0.075, 0.165, 1);
+}
+
+.nav__link:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: #00008B;
+    transition: .5s cubic-bezier(0.075, 0.165, 1);
+}
+
+.nav__item:hover{
+    color:#00008B;
+}
+
+.nav__item:hover:before{
+    right: 0;
+}
+
+.nav__item:hover:after{
+    left: 0;
+}
+
+
+
 
