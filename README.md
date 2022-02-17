@@ -9,7 +9,7 @@
 
 ### • **Sobre o Projeto**
 Projeto com desenvolvimento individual proposto no Bootcamp da Generation Brazil, onde utilizamos os conhecimentos e habilidades desenvolvidas no curso até
-aquele momento, onde utilizamos a linguagem Java (para desenvolvimento Back-End), Spring Boot e suas Utilidades, Postman para realizar testes CRUD, Typescript, ReactJS, MAterial Ui, HTML3 e CSS3.
+aquele momento, onde utilizamos a linguagem Java (para desenvolvimento Back-End), Spring Boot e suas Utilidades, Postman para realizar testes CRUD, Typescript, ReactJS, Material UI, HTML3 e CSS3.
 
 ### • **Justificativa**
 Por ser fã e admirar o universo pela sua complexidade, resolvi criar algo relacionado a isso, onde os usuários pudessem ter onde compartilhar, ideias, teorias e até mesmo experiências, sobre aquilo que nos cerca.
